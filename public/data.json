@@ -1,0 +1,44 @@
+[
+  {
+    "player_name": "Rishabh Pant",
+    "player_country": "India",
+    "player_price": 500,
+    "player_image": "https://p.imgci.com/db/PICTURES/CMS/316600/316613.jpg"
+  },
+  {
+    "player_name": "Cameron Green",
+    "player_country": "Australia",
+    "player_price": 500,
+    "player_image": "https://p.imgci.com/db/PICTURES/CMS/351600/351614.jpg"
+  },
+  {
+    "player_name": "Shreyas Iyer",
+    "player_country": "India",
+    "player_price": 500,
+    "player_image": "https://p.imgci.com/db/PICTURES/CMS/316500/316515.jpg"
+  },
+  {
+    "player_name": "Nicholas Pooran",
+    "player_country": "West Indies",
+    "player_price": 500,
+    "player_image": "https://p.imgci.com/db/PICTURES/CMS/316600/316609.jpg"
+  },
+  {
+    "player_name": "Matheesha Pathirana",
+    "player_country": "Sri Lanka",
+    "player_price": 500,
+    "player_image": "https://p.imgci.com/db/PICTURES/CMS/347800/347854.jpg"
+  },
+  {
+    "player_name": "Rashid Khan",
+    "player_country": "Afghanistan",
+    "player_price": 500,
+    "player_image": "https://p.imgci.com/db/PICTURES/CMS/321400/321453.jpg"
+  },
+  {
+    "player_name": "Virat Kohli",
+    "player_country": "India",
+    "player_price": 500,
+    "player_image": "https://p.imgci.com/db/PICTURES/CMS/316600/316605.jpg"
+  }
+]
