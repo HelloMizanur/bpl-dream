@@ -42,6 +42,8 @@ const HomePageComponent = ({
               coins={coins}
               key={index}
               player={player}
+              selectedButn={selectedButn}
+              setSelectedButn={setSelectedButn}
             />
           ))}
         </div>
