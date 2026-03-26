@@ -1,7 +1,9 @@
 import React, { useState } from "react";
+import Card from "./Card";
 
-const HomePageComponent = () => {
+const HomePageComponent = ({ players }) => {
   const [selectedButn, setSelectedButn] = useState("available");
+
   return (
     <>
       <div className="px-5 md:px-20 py-10">
@@ -21,6 +23,11 @@ const HomePageComponent = () => {
               Selected ( 0 )
             </button>
           </div>
+        </div>
+        <div className="pt-5 flex flex-wrap gap-5 justify-center md:justify-between ">
+          {players.map((player, index) => (
+            <Card key={index} player={player} />
+          ))}
         </div>
       </div>
     </>

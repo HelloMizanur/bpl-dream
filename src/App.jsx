@@ -9,16 +9,17 @@ const App = () => {
     const url = `/data.json`;
     const fetchData = async () => {
       const res = await fetch(url);
-      setPlayers(res.json);
+      const data = await res.json();
+      setPlayers(data);
     };
     fetchData();
   }, []);
-  console.log(players);
+
   return (
     <div>
       <Navbar />
       <Hero />
-      <HomePageComponent />
+      <HomePageComponent players={players} />
     </div>
   );
 };
