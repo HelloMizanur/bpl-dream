@@ -1,6 +1,18 @@
-import React from "react";
+import React, { useState } from "react";
 
-const Card = ({ player }) => {
+const Card = ({
+  player,
+  setCoins,
+  coins,
+  setSelectedPlayer,
+  selectedPlayer,
+}) => {
+  const [isClicked, setIsClicked] = useState(false);
+  const handleClick = (player) => {
+    setIsClicked(true);
+    setCoins(coins - player.player_price);
+    setSelectedPlayer([...selectedPlayer, player]);
+  };
   return (
     <div className="card bg-base-100 w-96 shadow-sm">
       <figure>
@@ -11,12 +23,16 @@ const Card = ({ player }) => {
       </figure>
       <div className="card-body">
         <h2 className="card-title">{player.player_name}</h2>
-        <p>
-          A card component has a figure, a body part, and inside body there are
-          title and actions parts
-        </p>
-        <div className="card-actions justify-end">
-          <button className="btn btn-primary">Buy Now</button>
+        <p>{player.player_price}</p>
+        <div className="card-actions justify-between">
+          <button className="btn btn-primary">{player.player_country}</button>
+          <button
+            onClick={() => handleClick(player)}
+            className="btn btn-success"
+            disabled={isClicked}
+          >
+            Selected
+          </button>
         </div>
       </div>
     </div>

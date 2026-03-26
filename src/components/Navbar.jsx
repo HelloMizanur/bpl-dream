@@ -1,7 +1,7 @@
 import React from "react";
 import { LuBadgeDollarSign } from "react-icons/lu";
 import logo from "../assets/logo.png";
-const Navbar = () => {
+const Navbar = ({ coins }) => {
   return (
     <>
       <div className="navbar bg-base-100 shadow-sm px-5 md:px-20 fixed z-20">
@@ -64,8 +64,7 @@ const Navbar = () => {
         </div>
         <div className="navbar-end">
           <a className="btn">
-            {" "}
-            0 Coin
+            {coins} Coin
             <LuBadgeDollarSign />
           </a>
         </div>
